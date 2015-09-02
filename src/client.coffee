@@ -23,7 +23,7 @@ _ = require 'underscore'
 templates = require './templates'
 
 # Cap LogMessages collection size
-MESSAGE_CAP = 5000
+MESSAGE_CAP = 1
 
 ###
 ColorManager acts as a circular queue for color values.
@@ -78,7 +78,6 @@ class LogMessage extends backbone.Model
   ROPEN = new RegExp '<','ig'
   RCLOSE = new RegExp '>','ig'
   render_message: ->
-    `debugger;`
     @get('message').replace(ROPEN, '&lt;').replace(RCLOSE, '&gt;')
 
 class LogMessages extends backbone.Collection
