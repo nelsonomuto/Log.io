@@ -5,7 +5,7 @@ ENV = '/usr/bin/env'
 BROWSERIFY = "#{ ENV } browserify"
 COFFEE = "#{ ENV } coffee"
 MOCHA = "#{ ENV } mocha"
-LESS = "#{ ENV } lessc"
+LESS = "#{ ENV } less"
 NODE = "#{ ENV } node"
 
 TEMPLATE_SRC = "#{ __dirname }/templates"
